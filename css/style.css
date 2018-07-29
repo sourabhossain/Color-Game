@@ -1,0 +1,105 @@
+/**
+ * Project Name: Color Game
+ * Author Name: Sourav Hossain
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #232323;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    background: #306977;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.2;
+    padding: 20px 0;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #306977;
+    font-size: inherit;
+    height: 100%;
+    padding: 0 5px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+button.selected {
+    color: #ffffff;
+    background: #306977;
+    cursor: pointer;
+}
+
+span#colorDisplay {
+    display: block;
+    font-size: 200%;
+}
+
+section.stripe {
+    background: #ffffff;
+    height: 30px;
+    text-align: center;
+}
+
+span#messageDisplay {
+    display: inline-block;
+    width: 20%;
+    text-transform: uppercase;
+    color: #306977;
+    font-weight: 500;
+}
+
+main.container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+div.square {
+    background-color: purple;
+    width: 30%;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 15%;
+    cursor: pointer;
+    -webkit-transition: background 0.6s;
+    transition: background 0.6s;
+}
+
+@media screen and (max-width: 700px) {
+    main.container {
+        width: 80%;
+    }
+    span#colorDisplay {
+        font-size: 125%;
+    }
+    span#messageDisplay {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+    main.container {
+        width: 100%;
+    }
+}
